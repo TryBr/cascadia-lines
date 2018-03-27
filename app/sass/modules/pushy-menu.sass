@@ -1,0 +1,148 @@
+@import "../vars"
+
+
+
+.pushy
+  width: 320px
+  background: #f9f9fb
+  padding-top: 32px
+  box-shadow: 0 20px 46px rgba(0, 0, 0, 0.1)
+
+  .pushy-menu-close
+    display: none
+    background: url("../img/close__btn.png")
+    width: 20px
+    height: 20px
+    right: 30px
+    top: 38px
+    position: absolute
+
+  a
+    padding: 0px
+
+  .pushy__title
+    font-size: 20px
+    color: #f39200
+    font-family: $rubik-font-medium
+    float: left
+    margin-left: 27px
+  .pushy-language-switch
+    float: right
+    margin-top: 5px
+    margin-right: 30px
+    .language-switch__item
+      text-decoration: none
+      color: #cccccc
+      font-size: 14px
+      font-family: $rubik-font-medium
+      margin-left: 19px
+      padding: 0px
+      float: left
+
+      &.active
+        color: #000000
+      &:hover
+        color: #f39200
+
+  .pushy-items-menu
+    padding: 0px
+    margin: 0px
+    list-style: none
+    clear: both
+    border-top: 1px solid #dde0e9
+    margin: 0 30px
+    margin-top: 32px
+    .item-menu
+      margin-bottom: 12px
+      letter-spacing: 0.3px
+      .item-menu__link
+        color: #131313
+        font-size: 14px
+        font-family: $rubik-font-regular
+        &.active
+          color: #f39200
+        &:hover
+          color: #f39200
+      &.item-menu--bold
+        margin-bottom: 0px
+        letter-spacing: normal
+        & > .item-menu__link
+          font-size: 16px
+          font-family: $rubik-font-medium
+          padding: 23px 0px
+    .item-menu-separator
+      border-top: 1px solid #dde0e9
+      &.item-menu-separator--contacts
+        margin-top: 24px
+
+  .items-menu-sub
+    list-style: none
+    padding: 0px
+    margin: 0px
+    .item-menu
+      margin-bottom: 12px
+      letter-spacing: 0.3px
+      .item-menu__link
+        color: #131313
+        font-size: 14px
+        font-family: $rubik-font-regular !important
+        &.active
+          color: #f39200
+        &:hover
+          color: #f39200
+
+  .pushy__phone
+    font-family: $rubik-font-medium
+    font-size: 22px
+    color: #000000
+    margin-top: 35px
+    float: left
+    margin-left: 30px
+    text-decoration: none
+    &:active
+      color: #000000
+    &:hover
+      color: #000000
+  .pushy-req-call
+    margin-left: 30px
+    font-size: 14px
+    color: #f39200
+    font-family: $rubik-font-regular
+    width: 258px
+    height: 42px
+    border-radius: 21px
+    border: 1px solid #f39200
+    text-align: center
+    line-height: 40px
+    display: block
+    text-decoration: none
+    float: left
+    margin-top: 19px
+    letter-spacing: .4px
+    &:hover
+      color: #fff
+      background: #f39200
+
+
+.site-overlay
+  background: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 1279px)
+  .pushy
+    box-shadow: none
+    .pushy-menu-close
+      display: none
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px)
+  .pushy
+    box-shadow: none
+    .pushy-menu-close
+      display: block
+    .pushy-language-switch
+      float: left
+      margin-top: 5px
+      margin-right: 0px
+      margin-left: 20%

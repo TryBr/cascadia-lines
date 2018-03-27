@@ -1,0 +1,92 @@
+@import "../vars"
+
+.content
+  &.content--no--dots
+    .content-container
+      background: #fff
+  .content-container
+    margin-top: 74px
+    background: url("../img/advantages-dots.png") 140% 40px no-repeat #fff
+    .content-left-side
+      width: 280px
+      float: left
+    .content-right-side
+      float: left
+      width: 930px
+      margin-left: 70px
+      h2
+        font-family: $rubik-font-medium
+        font-size: 32px
+        font-weight: 500
+        position: relative
+        margin-top: -12px
+        line-height: 1.4
+        padding-bottom: 32px
+        margin-bottom: 32px
+        &:before
+          content: ''
+          width: 60px
+          height: 2px
+          background: #f39200
+          position: absolute
+          left: 0px
+          bottom: 0px
+      p
+        color: #000000
+        font-family: $roboto-font-regular
+        font-size: 18px
+        font-weight: 400
+
+      .about-img
+        margin-top: 23px
+        margin-bottom: 11px
+      .services__img
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 1279px)
+  .content
+    .content-container
+      background: url("../img/advantages-dots.png") 570px 40px no-repeat #fff
+      margin-top: 0px
+      .content-left-side
+        display: none
+      .content-right-side
+        width: 100%
+        float: none
+        margin: 0px
+        h2
+          font-size: 32px
+          padding-bottom: 25px
+          margin-bottom: 25px
+          margin-top: 45px
+        p
+          font-size: 20px
+        .about-img
+          width: 100%
+        .services__img
+          width: 100%
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px)
+  .content
+    .content-container
+      background: none
+      margin-top: 0px
+      .content-left-side
+        display: none
+      .content-right-side
+        width: 100%
+        float: none
+        margin: 0px
+        h2
+          font-size: 22px
+          padding-bottom: 25px
+          margin-bottom: 25px
+          margin-top: 45px
+        p
+          font-size: 16px
+        .about-img
+          width: 100%
+        .services__img
+          width: 100%

@@ -1,0 +1,257 @@
+@import "../vars"
+
+.popup
+  width: 482px
+  height: 493px
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.07)
+  border-radius: 10px
+  background: #ffffff
+  padding: 0px !important
+
+
+  .popup-close
+    display: block
+    background: url("../img/close__btn.png")
+    width: 20px
+    height: 20px
+    position: absolute
+    right: 29px
+    top: 29px
+    cursor: pointer
+    z-index: 30
+    &:hover
+      background: url("../img/close__btn--hover.png")
+
+
+  .popup__title
+    color: #000000
+    font-family: $rubik-font-medium
+    font-size: 32px
+    font-weight: 500
+    text-align: center
+    padding-top: 70px
+    padding-bottom: 35px
+    position: relative
+    &.popup__title--with--line
+      &:after
+        content: ''
+        position: absolute
+        background: #f39200
+        width: 60px
+        height: 2px
+        display: block
+        bottom: 20px
+        left: 0px
+        right: 0px
+        margin: 0 auto
+
+  p
+    font-size: 16px
+    color: #000000
+    font-family: $roboto-font-regular
+    text-align: center
+
+  .popup__phone
+    font-size: 24px
+    color: #000000
+    font-family: $roboto-font-regular
+    text-align: center
+
+
+  .popup-btn
+    width: 280px
+    height: 42px
+    border-radius: 21px
+    background: #f39200
+    color: #fff
+    font-family: $rubik-font-regular
+    font-size: 14px
+    font-weight: 400
+    line-height: 40px
+    border: none
+    margin: 0 auto
+    display: block
+    margin-top: 45px
+    padding: 0px
+    outline: none
+    cursor: pointer
+    text-align: center
+    &:hover
+      background: #e68b03
+
+  .form__field
+    width: 280px
+    height: 45px
+    border: 1px solid #eaeaea
+    background: #fff
+    margin: 0 auto
+    margin-bottom: 20px
+    display: block
+    outline: none
+    padding-left: 16px
+    color: #151515
+    font-size: 16px
+    font-family: $roboto-font-regular
+    &::-webkit-input-placeholder
+      color: #949494
+      font-size: 16px
+      font-family: $roboto-font-regular
+    &::-moz-placeholder
+      color: #949494
+      font-size: 16px
+      font-family: $roboto-font-regular
+    &:-ms-input-placeholder
+      color: #949494
+      font-size: 16px
+      font-family: $roboto-font-regular
+    &:-moz-placeholder
+      color: #949494
+      font-size: 16px
+      font-family: $roboto-font-regular
+    &:focus
+        border: 1px solid #b7b7b7
+    &.valid
+      & + .form-field__placeholder
+        opacity: 1
+        visibility: hidden
+    &:required:valid
+      & + .form-field__placeholder
+        opacity: 0
+        visibility: hidden
+    &.error
+      border: 1px solid #be2a2a
+      &::-webkit-input-placeholder
+        color: #be2a2a
+      &::-moz-placeholder
+        color: #be2a2a
+      &:-ms-input-placeholder
+        color: #be2a2a
+      &:-moz-placeholder
+        color: #be2a2a
+    &.not--empty
+      & + .form-field__placeholder
+        opacity: 0
+        visibility: hidden
+  .form-check
+    width: 276px
+    margin: 0 auto
+    margin-top: 35px
+    a
+      text-decoration: underline
+      color: #000
+      &:hover
+        color: #f39200
+
+    .form-check__checkbox
+      border: 1px solid #dcdcdc
+      background: #ffffff
+      width: 20px
+      height: 20px
+      display: block
+      float: left
+      margin-right: 16px
+      cursor: pointer
+      position: relative
+
+    .form-check-label
+      cursor: pointer
+      font-weight: normal
+      font-size: 11px
+      font-family: $roboto-font-regular
+      color: #000
+      float: left
+      width: 240px
+      margin-top: 0px
+      line-height: 16px
+    input
+      display: none
+    input:checked + .form-check__checkbox
+      &:before
+        content: ''
+        width: 9px
+        height: 6px
+        position: absolute
+        top: 6px
+        left: 5px
+        background: url("../img/checkbox__icon.png")
+    &.invalid
+      color: #be2a2a
+      a
+        color: #be2a2a
+
+      .form-check__checkbox
+        border: 1px solid #be2a2a
+      .form-check-label
+        color: #be2a2a
+  .form__btn
+    width: 280px
+    height: 42px
+    border-radius: 21px
+    background: #f39200
+    color: #fff
+    font-family: $rubik-font-regular
+    font-size: 14px
+    font-weight: 400
+    line-height: 40px
+    border: none
+    margin: 0 auto
+    display: block
+    margin-top: 102px
+    padding: 0px
+    outline: none
+    cursor: pointer
+    &:hover
+      background: #e68b03
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px)
+  .popup
+    width: 500px
+    height: 410px
+    .popup__line
+      width: auto
+      height: 1px
+      background: #dde0e9
+      clear: both
+      margin: 0 20px
+      margin-bottom: 50px
+    .popup-close
+      right: 20px
+    .form-wrapper
+      margin: 0 20px
+    .popup__title
+      font-size: 20px
+      float: left
+      margin-left: 20px
+      padding: 0px
+      padding-top: 22px
+      padding-bottom: 10px
+      margin-bottom: 0px
+      position: relative
+      &.popup__title--with--line
+        &:after
+          display: none
+    .form__field
+      width: 100%
+    .form__btn
+      width: 100%
+    .form-check
+      float: none
+      width: 100%
+      .form-check-label
+        width: 80%
+
+
+  @media only screen and (max-width : 500px)
+    .popup
+      width: 260px
+      margin: 0 auto
+      left: 0px
+      right: 0px
+      .popup-btn
+        width: 90%
+      .popup__title
+        &.popup__title--with--line
+          &:after
+            display: none

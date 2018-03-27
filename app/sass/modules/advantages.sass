@@ -1,0 +1,158 @@
+@import "../vars"
+
+.advantages
+  padding-top: 93px
+  padding-bottom: 128px
+  position: relative
+  &:after
+    content: ''
+    background: url("../img/advantages-dots.png") no-repeat
+    display: block
+    position: absolute
+    top: 133px
+    right: 0
+    width: 689px
+    height: 189px
+
+  .advantages-items
+    margin-top: 105px
+    .advantages-item
+      width: 380px
+      float: left
+      padding-top: 87px
+      margin-right: 70px
+      position: relative
+      &:nth-child(3n+3)
+        margin-right: 0px
+      .advantages-item__title
+        color: #000000
+        font-family: $rubik-font-medium
+        font-size: 20px
+        font-weight: 500
+      .advantages-item__text
+        color: #828282
+        font-family: $roboto-font-regular
+        font-size: 18px
+        font-weight: 400
+      &.advantages-item--1
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          top: 11px
+          right: 122px
+          background-image: url("../img/sprite/sprite.png")
+          background-repeat: no-repeat
+          background-position: 0px -213px
+          width: 64px
+          height: 72px
+      &.advantages-item--2
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          top: 18px
+          right: 130px
+          background-image: url("../img/sprite/sprite.png")
+          background-repeat: no-repeat
+          background-position: 0px -90px
+          width: 129px
+          height: 55px
+      &.advantages-item--3
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          top: 14px
+          right: 106px
+          background-image: url("../img/sprite/sprite.png")
+          background-repeat: no-repeat
+          background-position: 0px -145px
+          width: 69px
+          height: 68px
+
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1279px)
+  .advantages
+    padding-top: 20px
+    padding-bottom: 50px
+    &:after
+        top: auto
+        right: 0
+        width: 47%
+        bottom: 95px
+    .advantages-items
+      .advantages-item
+        width: 46%
+        margin: 0px
+        margin-right: 50px
+        margin-bottom: 20px
+        &:nth-child(2n+2)
+          margin-right: 0px
+        &.advantages-item--1
+          &:after
+            top: 15px
+        &.advantages-item--2
+          &:after
+            top: 32px
+        &.advantages-item--3
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px)
+  .advantages
+    padding-top: 20px
+    padding-bottom: 50px
+    &:after
+      display: none
+    .advantages-items
+      margin-top: 0px
+      .advantages-item
+        padding-top: 50px
+        width: 100%
+        float: none
+        .advantages-item__title
+          font-size: 18px
+        .advantages-item__text
+          font-size: 16px
+        &.advantages-item--1
+          &:after
+            content: ''
+            display: block
+            position: absolute
+            top: 11px
+            right: 0px
+            background-image: url("../img/advantages/advantages__icon__1.png")
+            background-repeat: no-repeat
+            background-position: center center
+            width: 51px
+            height: 58px
+            background-size: contain
+        &.advantages-item--2
+          &:after
+            content: ''
+            display: block
+            position: absolute
+            top: 18px
+            right: 0px
+            background-image: url("../img/advantages/advantages__icon__2.png")
+            background-repeat: no-repeat
+            background-position: center center
+            width: 104px
+            height: 44px
+            background-size: contain
+        &.advantages-item--3
+          &:after
+            content: ''
+            display: block
+            position: absolute
+            top: 14px
+            right: 0px
+            background-image: url("../img/advantages/advantages__icon__3.png")
+            background-repeat: no-repeat
+            background-position: center center
+            width: 55px
+            height: 54px
+            background-size: contain

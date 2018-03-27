@@ -1,0 +1,163 @@
+@import "../vars"
+
+
+.about-gallery
+  margin-top: 40px
+  margin-bottom: 100px
+  .about-gallery-item
+    width: 232px
+    height: 302px
+    border: 1px solid #dde0e9
+    background: #ffffff
+    float: left
+    border-right: none
+    border-top: none
+    text-align: center
+    line-height: 302px
+    position: relative
+    &:hover
+      .gallery-item__plus
+        opacity: 1
+    &:nth-child(1)
+      border-top: 1px solid #dde0e9
+    &:nth-child(2)
+      border-top: 1px solid #dde0e9
+    &:nth-child(3)
+      border-top: 1px solid #dde0e9
+    &:nth-child(4)
+      border-top: 1px solid #dde0e9
+    &:nth-child(4n+4)
+      border-right: 1px solid #dde0e9
+      width: 232px !important
+    &:last-child
+      border-right: 1px solid #dde0e9
+      width: 233px
+    .gallery-item__link
+      padding: 60px 0px
+      display: block
+      width: 100%
+      height: 100%
+    .gallery-item__img
+      width: 124px
+      height: 182px
+    .gallery-item__plus
+      position: relative
+      width: 57px
+      height: 57px
+      position: absolute
+      top: 122px
+      left: 0px
+      right: 0px
+      margin: 0 auto
+      opacity: 0
+      cursor: pointer
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        top: 0px
+        left: 0px
+        background-image: url("../img/sprite/sprite.png")
+        background-repeat: no-repeat
+        background-position: -69px -145px
+        width: 57px
+        height: 57px
+
+.about-gallery-mobile
+  display: none
+  position: relative
+  padding-bottom: 60px
+  .swiper-container
+    width: 100%
+    height: 300px
+    border: 1px solid #dde0e9
+  .swiper-slide
+    padding-top: 55px
+    padding-bottom: 55px
+    text-align: center
+    .gallery-item__img
+      width: 124px
+      height: 182px
+  .swiper-pagination
+    left: 0
+    right: 0
+    bottom: 20px
+    .swiper-pagination-bullet
+      margin: 0 4px
+      background: #cccccc
+      width: 10px
+      height: 10px
+      opacity: 1
+      &.swiper-pagination-bullet-active
+        background: #f39200
+
+
+@media only screen and (max-width : 1279px)
+  .about-gallery
+    margin-top: 40px
+    margin-bottom: 100px
+    .about-gallery-item
+      width: 50%
+      height: 295px
+      border: 1px solid #dde0e9
+      background: #ffffff
+      float: left
+      border-right: none
+      border-top: none
+      text-align: center
+      line-height: 302px
+      position: relative
+      &:hover
+        .gallery-item__plus
+          opacity: 1
+      &:nth-child(1)
+        border-top: 1px solid #dde0e9
+      &:nth-child(2)
+        border-top: 1px solid #dde0e9
+        border-right: 1px solid #dde0e9
+      &:nth-child(3)
+        border-top: none
+      &:nth-child(4)
+        border-top: none
+      &:nth-child(4n+4)
+        width: 50% !important
+      &:last-child
+        width: 50%
+      &:nth-child(2n+2)
+        margin-right: 0px
+      .gallery-item__link
+        padding: 60px 0px
+        display: block
+        width: 100%
+        height: 100%
+      .gallery-item__img
+        width: 124px
+        height: 182px
+      .gallery-item__plus
+        position: relative
+        width: 57px
+        height: 57px
+        position: absolute
+        top: 122px
+        left: 0px
+        right: 0px
+        margin: 0 auto
+        opacity: 0
+        cursor: pointer
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          top: 0px
+          left: 0px
+          background-image: url("../img/sprite/sprite.png")
+          background-repeat: no-repeat
+          background-position: -69px -145px
+          width: 57px
+          height: 57px
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px)
+  .about-gallery
+    display: none
+  .about-gallery-mobile
+    display: block

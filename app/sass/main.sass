@@ -1,0 +1,90 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*
+  transition: all .15s
+  -webkit-transition: all .15s
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html
+	height: 100%
+
+body
+	min-height: 100%
+	padding-bottom: 70px
+	margin: 0 auto
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $roboto-font-regular
+	opacity: 1
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.hidden
+	display: none
+
+
+// other
+@import "common" // common
+@import "modules/header" // header
+@import "modules/banner" // banner
+@import "modules/services" // services
+@import "modules/advantages" // advantages
+@import "modules/feedback" // feedback
+@import "modules/partners" // partners
+@import "modules/contacts" // contacts
+@import "modules/contacts-map" // contacts map
+@import "modules/footer" // footer
+
+// content
+@import "modules/content" // content
+@import "modules/content-title" // content title
+@import "modules/content-about-advantages" // content about advantages
+@import "modules/content-services-advantages" // content services advantages
+@import "modules/content-about-gallery" // content about gallery
+@import "modules/content-request-response" // content request response
+
+// menu
+@import "modules/pushy-menu" // pushy menu
+@import "modules/left-menu" // left menu
+
+// popups
+@import "modules/popups" // footer

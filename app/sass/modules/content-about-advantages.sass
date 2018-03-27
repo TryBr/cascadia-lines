@@ -1,0 +1,83 @@
+@import "../vars"
+
+.about-advantages
+  margin-bottom: 50px
+  .advantages-item
+    width: 380px
+    float: left
+    padding-top: 34px
+    margin-right: 85px
+    position: relative
+    &:nth-child(3n+3)
+      margin-right: 0px
+    .advantages-item__title
+      color: #000000
+      font-family: $rubik-font-medium
+      font-size: 20px
+      font-weight: 500
+      letter-spacing: 0.2px
+      width: 210px
+      margin-bottom: 20px
+    .advantages-item__text
+      color: #000000
+      font-family: $roboto-font-regular
+      font-size: 16px
+      font-weight: 400
+    &.advantages-item--1
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        background-image: url("../img/sprite/sprite.png")
+        background-position: -207px -36px
+        background-repeat: no-repeat
+        width: 62px
+        height: 46px
+        top: 29px
+        right: 51px
+    &.advantages-item--2
+      &:after
+        content: ''
+        position: absolute
+        display: block
+        background-image: url("../img/sprite/sprite.png")
+        background-repeat: no-repeat
+        background-position: -182px -90px
+        width: 51px
+        height: 53px
+        top: 29px
+        right: 51px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 1279px)
+  .about-advantages
+    margin-bottom: 10px
+    .advantages-item
+      width: 44%
+      &:nth-child(2n+2)
+        margin-right: 0px
+      .advantages-item__title
+        font-size: 20px
+      &.advantages-item--1
+        &:after
+          right: 0px
+      &.advantages-item--2
+        &:after
+          right: 0px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px)
+  .about-advantages
+    margin-bottom: 10px
+    .advantages-item
+      width: 100%
+      .advantages-item__title
+        font-size: 18px
+      &.advantages-item--1
+        &:after
+          right: 0px
+      &.advantages-item--2
+        &:after
+          right: 0px

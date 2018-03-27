@@ -1,0 +1,114 @@
+@import "../vars"
+
+.services
+  padding-top: 63px
+  padding-bottom: 140px
+  .services-items
+    margin-top: 38px
+    .services-item
+      position: relative
+      width: 426px
+      height: 280px
+      border: 1px solid #dde0e9
+      border-right: none
+      border-top: none
+      background: #ffffff
+      float: left
+      &:hover
+        background: #f9f9fb
+        .services-item__title
+          color: #f39200
+      &:nth-child(1)
+        border-top: 1px solid #dde0e9
+      &:nth-child(2)
+        border-top: 1px solid #dde0e9
+      &:nth-child(3)
+        border-top: 1px solid #dde0e9
+      &:nth-child(5)
+        .services-item__img
+          top: 75px
+      &:nth-child(3n+3)
+        border-right: 1px solid #dde0e9
+      .services-item__img
+        position: absolute
+        top: 56px
+        left: 50px
+      .services-item__title
+        color: #000000
+        font-family: $rubik-font-medium
+        font-size: 18px
+        font-weight: 500
+        position: absolute
+        bottom: 40px
+        left: 52px
+        text-decoration: none
+      .services-item__link
+        position: absolute
+        width: 100%
+        height: 100%
+        display: block
+        z-index: 1
+
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1279px)
+    .services
+      padding-top: 20px
+      padding-bottom: 50px
+      .services-items
+        .services-item
+          width: 50%
+          height: 278px
+          float: none
+          border: 1px solid #dde0e9
+          border-top: none
+          float: left
+          border-right: none
+          .services-item__img
+            width: 75%
+            max-width: 300px
+          &:nth-child(3)
+            border-right: none
+            border-top: none
+          &:nth-child(2n+2)
+            border-right: 1px solid #dde0e9
+
+
+@media only screen and (max-width : 767px)
+  .services
+    padding-top: 20px
+    padding-bottom: 50px
+    .services-items
+      .services-item
+        width: 100%
+        height: 80px
+        float: none
+        border: 1px solid #dde0e9
+        border-bottom: none
+        &:last-child
+          border-bottom: 1px solid #dde0e9
+        &:nth-child(3)
+          border-top: 1px solid #dde0e9
+        &:nth-child(5)
+          .services-item__img
+            top: 32px
+        &:nth-child(5), &:nth-child(1)
+          .services-item__title
+            top: 32px
+        &:nth-child(3n+3)
+          border-right: 1px solid #dde0e9
+        .services-item__img
+          left: 10px
+          width: 25%
+          position: relative
+          float: left
+          top: 27px
+        .services-item__title
+          position: relative
+          float: left
+          width: 60%
+          right: 0
+          left: 35px
+          text-align: left
+          top: 17px
+          font-size: 14px

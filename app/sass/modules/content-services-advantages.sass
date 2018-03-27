@@ -1,0 +1,72 @@
+@import "../vars"
+
+.services-advantages
+  margin-bottom: 90px
+  .advantages-item
+    position: relative
+    width: 253px
+    float: left
+    padding-top: 58px
+    margin-right: 85px
+    &:after
+      content: ''
+      display: block
+      position: absolute
+      top: 34px
+      right: 5px
+      background-image: url("../img/sprite/sprite.png")
+      background-repeat: no-repeat
+      background-position: -129px -90px
+      width: 53px
+      height: 53px
+    &:nth-child(3n+3)
+      margin-right: 0px
+    .advantages-item__title
+      color: #000000
+      font-family: $rubik-font-medium
+      font-size: 20px
+      font-weight: 500
+      letter-spacing: 0.2px
+      width: 210px
+      margin-bottom: 20px
+    .advantages-item__text
+      color: #828282
+      font-family: $roboto-font-regular
+      font-size: 16px
+      font-weight: 400
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px)
+  .services-advantages
+    margin-bottom: 0px
+    padding-bottom: 40px
+    .advantages-item
+      width: 100%
+      padding-top: 45px
+      .advantages-item__title
+        font-size: 18px
+      &.advantages-item--1
+        &:after
+          right: 0px
+          background-image: url("../img/advantages/advantages__services__img.png")
+          background-position: center center
+          background-size: contain
+          width: 42px
+          height: 42px
+      &.advantages-item--2
+        &:after
+          right: 0px
+          background-image: url("../img/advantages/advantages__services__img.png")
+          background-position: center center
+          background-size: contain
+          width: 42px
+          height: 42px
+      &.advantages-item--3
+        &:after
+          right: 0px
+          background-image: url("../img/advantages/advantages__services__img.png")
+          background-position: center center
+          background-size: contain
+          width: 42px
+          height: 42px

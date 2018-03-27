@@ -1,0 +1,142 @@
+@import "vars"
+
+.clearfix:after
+  content: ""
+  display: table
+  clear: both
+
+.main-container
+  min-height: 100%
+
+.container-fixed
+	width: 1280px
+	margin: 0 auto
+
+.info-block
+  .info-block__title
+    color: #000000
+    font-family: $rubik-font-medium
+    font-size: 32px
+    font-weight: 500
+  .info-block__text
+    color: #000000
+    font-size: 18px
+    font-weight: 400
+    line-height: 30px
+    font-family: $roboto-font-regular
+    width: 760px
+.info-block--colored
+  background: $info-block-background-color
+
+
+.fancybox-skin
+  background: none
+  box-shadow: none !important
+  border-radius: 0px
+  padding: 0px !important
+
+.fancybox-close
+  background: url("../img/close__btn.png") #fff no-repeat center center
+  width: 20px
+  height: 20px
+  cursor: pointer
+  top: 20px
+  right: 20px
+  padding: 20px
+  border-radius: 50%
+  &:hover
+    background: url("../img/close__btn--hover.png") #fff no-repeat center center
+
+
+.fancybox-button--close
+  background: url("../img/close__btn.png") #fff no-repeat center center
+  width: 20px
+  height: 20px
+  cursor: pointer
+  top: 20px
+  right: 20px
+  padding: 20px
+  border-radius: 50%
+  &:hover
+    background: url("../img/close__btn--hover.png") #fff no-repeat center center !important
+  &:before
+    display: none
+  &:after
+    display: none
+
+  .fancybox-overlay
+    background: rgba(74, 76, 81, 0.9) !important
+    *
+    	-webkit-box-sizing: none
+    	-moz-box-sizing: none
+    	box-sizing: none
+    	&:before, &:after
+    		-webkit-box-sizing: none
+    		-moz-box-sizing: none
+    		box-sizing: none
+
+.fancybox-close-small
+  display: none
+
+.fancybox-button--play
+  display: none
+
+.fancybox-button--fullscreen
+  display: none
+
+.fancybox-button--thumbs
+  display: none
+
+input
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+
+body
+  position: relative
+  .header-menu-close
+    display: none
+    top: 38px
+    cursor: pointer
+    left: 0px
+    &.active
+      display: block
+      background: url("../img/close__btn.png")
+      width: 20px
+      height: 20px
+      position: fixed
+      left: 340px
+      z-index: 99
+      &:hover
+        background: url("../img/close__btn--hover.png")
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 1279px)
+  .container-fixed
+    width: auto
+    margin: 0 20px
+  .info-block
+    padding: 0px
+    .info-block__title
+      width: 100%
+      font-size: 32px
+    .info-block__text
+      width: 100%
+      font-size: 18px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px)
+  body
+    padding-bottom: 0px
+  .container-fixed
+    width: auto
+    margin: 0 20px
+  .info-block
+    padding: 0px
+    .info-block__title
+      width: 100%
+      font-size: 22px
+    .info-block__text
+      width: 100%
+      font-size: 16px

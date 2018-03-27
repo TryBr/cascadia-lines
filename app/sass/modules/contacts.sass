@@ -1,0 +1,182 @@
+@import "../vars"
+
+.contacts
+  padding-top: 103px
+  padding-bottom: 170px
+  background: url("../img/contacts__map.png") no-repeat center 66%
+  &.contacts--inner--page
+    padding-top: 0px
+    background: url("../img/contacts__map.png") no-repeat center 105%
+  .contacts__title
+    color: #000000
+    font-family: $rubik-font-medium
+    font-size: 32px
+    font-weight: 500
+    text-align: center
+    position: relative
+    &:before
+      content: ''
+      width: 60px
+      height: 2px
+      margin: 0 auto
+      background: #f39200
+      display: block
+      position: absolute
+      bottom: -19px
+      left: 0
+      right: 0
+  .contacts-info
+    margin-top: 150px
+    .contacts-info-item
+      position: relative
+      float: left
+      margin-right: 70px
+      width: 380px
+      &:last-child
+        margin-right: 0px
+        &:before
+          display: none
+      &:before
+        content: ''
+        display: block
+        width: 1px
+        height: 225px
+        background: #e9e3e1
+        position: absolute
+        right: 0px
+        top: 0px
+
+      .info-item__city
+        color: #000000
+        font-family: $rubik-font-medium
+        font-size: 20px
+        font-weight: 500
+        margin-bottom: 18px
+      .info-item__phone
+        color: #000000
+        font-family: $roboto-font-regular
+        font-size: 18px
+        font-weight: 400
+        padding-left: 35px
+        margin-bottom: 1px
+        position: relative
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          top: 6px
+          left: 0px
+          background-image: url("../img/sprite/sprite.png")
+          background-repeat: no-repeat
+          background-position: -327px -36px
+          width: 17px
+          height: 17px
+      .info-item__path
+        color: #000000
+        font-family: $roboto-font-regular
+        font-size: 18px
+        font-weight: 400
+        margin-top: 26px
+        margin-bottom: 12px
+        &.parth--mt
+          margin-top: 56px
+      .info-item__email
+        position: relative
+        color: #f39200
+        font-family: $roboto-font-regular
+        font-size: 18px
+        font-weight: 400
+        padding-left: 35px
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          top: 5px
+          left: 0px
+          background-image: url("../img/sprite/sprite.png")
+          background-repeat: no-repeat
+          background-position: -344px -36px
+          width: 17px
+          height: 14px
+
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1279px)
+  .contacts
+    padding-top: 40px
+    padding-bottom: 50px
+    background-position: center 17%
+    &.contacts--inner--page
+      padding-top: 0px
+      padding-bottom: 50px
+      background-position: center 0%
+    .contacts__title
+      font-size: 32px
+    .contacts-info
+      margin-top: 50px
+      .contacts-info-item
+        width: 100%
+        float: none
+        border-bottom: 1px solid #e9e3e1
+        padding-bottom: 40px
+        margin-bottom: 40px
+        &:last-child
+          border-bottom: none
+          margin-bottom: 0px
+          padding-bottom: 0px
+        &:before
+          display: none
+        .info-item__path
+          &.parth--mt
+            margin-top: 18px
+            margin-bottom: 0px
+        .info-item-wrapper
+          float: left
+        .info-item-path-wrapper
+          float: right
+          margin-top: 52px
+          width: 350px
+          .info-item__path
+            margin-top: 0px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px)
+  .contacts
+    padding-top: 40px
+    padding-bottom: 50px
+    background-position: center 17%
+    &.contacts--inner--page
+      padding-top: 0px
+      padding-bottom: 50px
+      background-position: center 0%
+    .contacts__title
+      font-size: 22px
+    .contacts-info
+      margin-top: 50px
+      .contacts-info-item
+        width: 100%
+        float: none
+        border-bottom: 1px solid #e9e3e1
+        padding-bottom: 40px
+        margin-bottom: 40px
+        &:last-child
+          border-bottom: none
+          margin-bottom: 0px
+          padding-bottom: 0px
+        &:before
+          display: none
+        .info-item__city
+          font-size: 18px
+        .info-item-path-wrapper
+          .info-item__path
+            margin-top: 26px
+            &.parth--mt
+              margin-top: 18px
+              margin-bottom: 0px
+        .info-item-wrapper
+          float: none
+        .info-item-path-wrapper
+          float: none
+          margin: 0px
+          width: auto

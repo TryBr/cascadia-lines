@@ -1,0 +1,106 @@
+@import "../vars"
+
+.footer
+  height: 70px
+  line-height: 70px
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+  background: #fff
+  margin-top: -70px
+  &.footer-inner
+    border-top: 1px solid #dde0e9
+  .footer-copyright
+    color: #000000
+    font-family: $roboto-font-regular
+    font-size: 14px
+    font-weight: 400
+    float: left
+  .footer-phone
+    color: #000000
+    font-family: $roboto-font-regular
+    font-size: 14px
+    font-weight: 400
+    float: left
+    margin-left: 339px
+    text-decoration: none
+    display: block
+    &:active
+      color: #000000
+    &:hover
+      color: #000000
+    .phone__number
+      font-weight: 500
+      font-family: $roboto-font-bold
+      text-decoration: none
+      color: #000000
+      &:active
+        color: #000000
+      &:hover
+        color: #000000
+  .footer-policy
+    color: #000000
+    font-family: $roboto-font-regular
+    font-size: 14px
+    font-weight: 400
+    float: right
+    text-decoration: none
+    &:hover
+      color: #f39200
+      text-decoration: underline
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 1279px)
+  .footer
+    height: auto
+    line-height: normal
+    padding: 30px 0px
+    .footer-copyright
+      width: 33%
+      float: left
+      margin: 0px
+      text-align: left
+      padding: 0px
+    .footer-phone
+      width: 33%
+      float: left
+      margin: 0px
+      text-align: center
+      padding: 0px
+    .footer-policy
+      width: 33%
+      float: left
+      margin: 0px
+      text-align: right
+      display: block
+      padding: 0px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px)
+  .footer
+    height: auto
+    line-height: normal
+    padding: 30px 0px
+    position: relative
+    margin-top: 0px
+    .footer-copyright
+      width: 100%
+      float: none
+      margin: 0px
+      text-align: center
+      padding-bottom: 25px
+    .footer-phone
+      width: 100%
+      float: none
+      margin: 0px
+      text-align: center
+      padding-bottom: 25px
+    .footer-policy
+      width: 100%
+      float: none
+      margin: 0px
+      text-align: center
+      display: block

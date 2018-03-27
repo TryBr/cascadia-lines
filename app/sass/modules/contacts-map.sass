@@ -1,0 +1,52 @@
+@import "../vars"
+
+.contacts-map
+  position: relative
+  .contacts-map-infobox
+    position: absolute
+    top: 70px
+    left: -11px
+    right: 0px
+    margin: 0 auto
+    width: 523px
+    height: 163px
+    text-align: center
+    background: #ffffff
+    &:after
+      content: ''
+      display: block
+      width: 0px
+      height: 0px
+      border-left: 14px solid transparent
+      border-right: 14px solid transparent
+      border-top: 10px solid white
+      position: absolute
+      bottom: -10px
+      left: 0px
+      right: 0px
+      margin: 0 auto
+    .map-infobox__title
+      color: #000000
+      font-family: $rubik-font-medium
+      font-size: 20px
+      font-weight: 500
+      padding-top: 42px
+    p
+      color: #000000
+      font-family: $roboto-font-regular
+      font-size: 16px
+      font-weight: 400
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px)
+  .contacts-map
+    .contacts-map-infobox
+      width: 282px
+      height: 163px
+      .map-infobox__title
+        font-size: 18px
+        padding-top: 20px
+      p
+        padding: 0 20px
+        margin: 10px 0px

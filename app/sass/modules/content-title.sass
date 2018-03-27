@@ -1,0 +1,65 @@
+@import "../vars"
+
+.content
+  .content-title-wrapper
+    height: 120px
+    line-height: 116px
+    margin-top: 30px
+    background: url("../img/inner-page-title-bg.jpg") no-repeat #5da1c4
+    background-position: 0px 0px
+    background-size: cover
+    .content__title
+      font-size: 38px
+      color: #ffffff
+      font-family: $rubik-font-regular
+      letter-spacing: 1px
+      float: left
+    .content-title-back__link
+      color: #ffffff
+      font-size: 16px
+      font-family: $roboto-font-regular
+      padding-left: 30px
+      float: right
+      text-decoration: none
+      height: 25px
+      line-height: normal
+      margin: 47.5px 0px
+      position: relative
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        top: 7px
+        left: 5px
+        width: 13px
+        height: 11px
+        background-image: url("../img/sprite/sprite.png")
+        background-repeat: no-repeat
+        background-position: -361px -36px
+      &:hover
+        text-decoration: underline
+    .back__link--mobile
+      display: none
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px)
+  .content
+    .content-title-wrapper
+      margin-top: 0px
+      height: 60px
+      line-height: 60px
+      .content__title
+        font-size: 22px
+      .content-title-back__link
+        margin: 0px
+        display: block
+        font-size: 14px
+        letter-spacing: -999999999999999px
+        margin-top: 20px
+        display: none
+      .back__link--mobile
+        display: block
+        &:after
+          right: 0px
+          left: auto

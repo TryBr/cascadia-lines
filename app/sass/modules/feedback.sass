@@ -1,0 +1,376 @@
+@import "../vars"
+
+.feedback
+  padding-top: 100px
+  padding-bottom: 100px
+  .feedback-form-wrapper
+    width: 1280px
+    height: 450px
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.07)
+    border-radius: 10px
+    background: #ffffff
+    margin: 0 auto
+    .feedback-form-container
+      width: 910px
+      height: 100%
+      margin: 0 auto
+      padding-top: 20px
+      position: relative
+      &:before
+        content: ''
+        width: 213px
+        height: 103px
+        position: absolute
+        top: 0px
+        right: 0px
+        display: block
+        background: #f9f8fe
+      &:after
+        content: ''
+        display: block
+        position: absolute
+        top: 26px
+        right: 77px
+        background: url("../img/sprite/sprite.png") #f9f8fe no-repeat
+        background-repeat: no-repeat
+        background-position: -269px -36px
+        width: 58px
+        height: 32px
+      &.feedback-form-container--no--icon
+        &:before
+          display: none
+        &::after
+          display: none
+    .feedback__title
+      color: #000000
+      font-family: $rubik-font-medium
+      font-size: 32px
+      font-weight: 500
+      margin-top: 58px
+  .feedback-form
+    margin-top: 36px
+    .feedback-form-left
+      float: left
+      width: 280px
+      margin-right: 50px
+    .feedback-form-right
+      float: left
+      width: 580px
+      .feedback-form-final-wrapper
+        width: 100%
+        height: 74px
+        border: 1px solid #eaeaea
+        background: #fff
+        border-top: none
+    .form__field
+      width: 100%
+      height: 45px
+      border: 1px solid #eaeaea
+      background: #fff
+      margin: 0 auto
+      margin-bottom: 30px
+      display: block
+      outline: none
+      padding-left: 16px
+      color: #151515
+      font-size: 16px
+      font-family: $roboto-font-regular
+      &::-webkit-input-placeholder
+        color: #949494
+        font-size: 16px
+        font-family: $roboto-font-regular
+      &::-moz-placeholder
+        color: #949494
+        font-size: 16px
+        font-family: $roboto-font-regular
+      &:-ms-input-placeholder
+        color: #949494
+        font-size: 16px
+        font-family: $roboto-font-regular
+      &:-moz-placeholder
+        color: #949494
+        font-size: 16px
+        font-family: $roboto-font-regular
+      &:focus
+        border: 1px solid #b7b7b7
+      &.valid
+        & + .form-field__placeholder
+          opacity: 1
+          visibility: hidden
+      &:required:valid
+        & + .form-field__placeholder
+          opacity: 0
+          visibility: hidden
+      &.error
+        border: 1px solid #be2a2a
+        &::-webkit-input-placeholder
+          color: #be2a2a
+        &::-moz-placeholder
+          color: #be2a2a
+        &:-ms-input-placeholder
+          color: #be2a2a
+        &:-moz-placeholder
+          color: #be2a2a
+      &.not--empty
+        & + .form-field__placeholder
+          opacity: 0
+          visibility: hidden
+
+    .form__textarea
+        width: 100%
+        height: 121px
+        border: 1px solid #eaeaea
+        background: #fff
+        display: block
+        outline: none
+        padding-left: 16px
+        padding-top: 15px
+        color: #151515
+        font-size: 16px
+        font-family: $roboto-font-regular
+        resize: none
+        &::-webkit-input-placeholder
+          color: #949494
+          font-size: 16px
+          font-family: $roboto-font-regular
+          line-height: 1.5
+        &::-moz-placeholder
+          color: #949494
+          font-size: 16px
+          font-family: $roboto-font-regular
+          line-height: 1.5
+        &:-ms-input-placeholder
+          color: #949494
+          font-size: 16px
+          font-family: $roboto-font-regular
+          line-height: 1.5
+        &:-moz-placeholder
+          color: #949494
+          font-size: 16px
+          font-family: $roboto-font-regular
+          line-height: 1.5
+        &:focus
+          border: 1px solid #b7b7b7
+        &.valid
+          & + .form-field__placeholder
+            opacity: 1
+            visibility: hidden
+        &:required:valid
+          & + .form-field__placeholder
+            opacity: 0
+            visibility: hidden
+        &.error
+          border: 1px solid #be2a2a
+          &::-webkit-input-placeholder
+            color: #be2a2a
+          &::-moz-placeholder
+            color: #be2a2a
+          &:-ms-input-placeholder
+            color: #be2a2a
+          &:-moz-placeholder
+            color: #be2a2a
+        &.not--empty
+          & + .form-field__placeholder
+            opacity: 0
+            visibility: hidden
+    .form-check
+      width: 276px
+      margin: 0 auto
+      margin-top: 20px
+      float: left
+      margin-left: 18px
+      a
+        text-decoration: underline
+        color: #000
+        &:hover
+          color: #f39200
+
+      .form-check__checkbox
+        border: 1px solid #dcdcdc
+        width: 20px
+        height: 20px
+        display: block
+        float: left
+        margin-right: 16px
+        cursor: pointer
+        position: relative
+
+      .form-check-label
+        cursor: pointer
+        font-weight: normal
+        font-size: 11px
+        font-family: $roboto-font-regular
+        color: #000
+        float: left
+        width: 240px
+        margin-top: 0px
+        line-height: 16px
+      input
+        display: none
+      input:checked + .form-check__checkbox
+        &:before
+          content: ''
+          width: 9px
+          height: 6px
+          position: absolute
+          top: 6px
+          left: 5px
+          background: url("../img/checkbox__icon.png")
+      &.invalid
+        color: #be2a2a
+        a
+          color: #be2a2a
+
+        .form-check__checkbox
+          border: 1px solid #be2a2a
+        .form-check-label
+          color: #be2a2a
+    .form__btn
+      float: right
+      width: 186px
+      height: 42px
+      border-radius: 21px
+      background: #f39200
+      color: #fff
+      font-family: $rubik-font-regular
+      font-size: 14px
+      font-weight: 400
+      line-height: 42px
+      border: none
+      margin: 0 auto
+      display: block
+      margin-top: 14px
+      margin-right: 37px
+      padding: 0px
+      outline: none
+      cursor: pointer
+      &:hover
+        background: #e68b03
+
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1279px)
+  .feedback
+    padding-top: 100px
+    padding-bottom: 100px
+    .feedback-form-wrapper
+      // width: auto
+      height: 450px
+      box-shadow: 0 5px 40px rgba(0, 0, 0, 0.07)
+      border-radius: 10px
+      background: #ffffff
+      margin: 0 auto
+      width: 728px
+      .feedback-form-container
+        width: auto
+        height: 100%
+        margin: 0 auto
+        padding-top: 20px
+        position: relative
+        padding-left: 30px
+        padding-right: 30px
+        &:before
+          content: ''
+          width: 213px
+          height: 103px
+          position: absolute
+          top: 0px
+          right: 30px
+          display: block
+          background: #f9f8fe
+        &:after
+          content: ''
+          display: block
+          position: absolute
+          top: 26px
+          right: 100px
+          background: url("../img/sprite/sprite.png") #f9f8fe no-repeat
+          background-repeat: no-repeat
+          background-position: -269px -36px
+          width: 58px
+          height: 32px
+        &.feedback-form-container--no--icon
+          &:before
+            display: none
+          &:after
+            display: none
+      .feedback__title
+        color: #000000
+        font-family: $rubik-font-medium
+        font-size: 32px
+        font-weight: 500
+        margin-top: 22px
+        line-height: normal
+    .feedback-form
+      .feedback-form-left
+        margin-right: 30px
+      .feedback-form-right
+        width: 358px
+      .form__btn
+        margin-top: 44px
+        margin-right: 215px
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 767px)
+  .feedback
+    padding-top: 40px
+    padding-bottom: 50px
+    .feedback-form-wrapper
+      width: 100%
+      height: auto
+      padding-bottom: 30px
+      .feedback__title
+        margin-top: 10px
+        font-size: 22px
+        margin-left: 20px
+        margin-bottom: 0px
+        padding-top: 30px
+      .feedback-form-container
+        width: 100%
+        padding: 0px
+        &::before
+          display: none
+        &::after
+          display: none
+    .feedback-form
+      margin-left: 20px
+      margin-right: 20px
+      margin-top: 20px
+      .feedback-form-left
+        width: 100%
+        float: none
+      .feedback-form-right
+        width: 100%
+        float: none
+        .feedback-form-final-wrapper
+          height: 85px
+      .form__field
+        width: 100%
+        margin-bottom: 20px
+      .form-check
+        width: 100%
+        .form-check-label
+          width: 75%
+      .form__btn
+          width: 100%
+          margin: 0 auto
+          margin-top: 60px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 375px)
+  .feedback
+    .feedback-form
+      .form__btn
+          width: 100%
+          margin: 0 auto
+          margin-top: 40px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 320px)
+  .feedback
+    .feedback-form
+      .form__btn
+          width: 100%
+          margin: 0 auto
+          margin-top: 40px

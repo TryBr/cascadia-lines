@@ -1,0 +1,33 @@
+@import "../vars"
+
+.content-left-menu
+  padding: 0px
+  margin: 0px
+  list-style: none
+  .left-menu-item
+    text-align: left
+    border: 1px solid #dde0e9
+    border-bottom: none
+    &:last-child
+      border-bottom: 1px solid #dde0e9
+    .left-menu-item__link
+      color: #010101
+      font-family: $rubik-font-medium
+      font-size: 16px
+      font-weight: 500
+      text-decoration: none
+      display: block
+      padding: 17px 0px
+      padding-left: 22px
+      &:hover
+        color: #f39200
+  .active
+    border: 1px solid #f39200
+    .left-menu-item__link
+      background: #f39200
+      color: #fff !important
+    &:hover
+      .left-menu-item__link
+        background: #e68b03
+    & + .left-menu-item
+      border-top: 1px solid #f39200
